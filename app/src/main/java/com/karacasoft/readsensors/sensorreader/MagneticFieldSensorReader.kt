@@ -12,7 +12,7 @@ class MagneticFieldSensorReader(sensorManager: SensorManager) : BasicSensorReade
 
     init {
         sensor?.also {
-            sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_FASTEST)
+            sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_GAME)
         }
     }
 

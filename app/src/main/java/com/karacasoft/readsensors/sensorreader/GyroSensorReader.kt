@@ -12,7 +12,7 @@ class GyroSensorReader(sensorManager: SensorManager) : BasicSensorReader(), Sens
 
     init {
         sensor?.also {
-            sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_FASTEST)
+            sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_GAME)
         }
     }
 
